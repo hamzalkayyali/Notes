@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Add Note
+{% endblock %}
+
+{% block main %}
+    <form action="/add" method="post" class>
+        <div class="form-group">
+            <input autocomplete="off" placeholder="Title here.." class="form-control" autofocus name="title" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" placeholder="Content here.." class="form-control" autofocus name="content" type="text-area">
+        </div>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Edit
+{% endblock %}
+
+{% block main %}
+    <form action="/remove" method="post">
+        <div class="form-group">
+            <input autocomplete="off" placeholder="The title of the note" class="form-control" autofocus name="title" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Remove</button>
+    </form>
+{% endblock %}
